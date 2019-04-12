@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LoginPage</string>
+    <string name="app_userid">User ID</string>
+    <string name="app_password">Password</string>
+
+    <string name="app_submit">Submit</string>
+    <string name="app_register">Register</string>
+    <string name="app_forgot_pass"> Forgot Password ?</string>
+</resources>

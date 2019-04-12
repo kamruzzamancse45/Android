@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+   android:orientation="vertical"
+    tools:context=".Main2Activity"
+
+    >
+    <TextView
+        android:id="@+id/personal_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Personal Inforamtion"
+        android:textSize="32sp"
+        android:textColor="#0d0c0c"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:layout_below="@+id/firstName"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+
+        />
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:layout_below="@+id/lastName"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:drawableLeft="@drawable/smartphone"
+
+        />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:drawableLeft="@drawable/mail"
+        />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User ID"
+        android:layout_below="@+id/mail"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:drawableLeft="@drawable/user"
+        />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@+id/userName"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:drawableLeft="@drawable/padlock"
+        />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/userPassword"
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/success"
+
+        />
+
+
+
+</RelativeLayout>
