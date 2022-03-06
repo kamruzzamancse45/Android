@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="app_convertar">Tempture Convertar </string>
+    <string name="app_edit_text">Enter Your Tempture</string>
+    <string name="app_degree_celsius">Degree celsius</string>
+    <string name="app_fahrenheit">Fahrenheit</string>
+    <string name="app_result">Result</string>
+
+</resources>

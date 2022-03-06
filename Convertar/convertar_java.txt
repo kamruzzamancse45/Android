@@ -1,0 +1,62 @@
+package com.example.kamruzzaman.calculator;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+    RadioGroup radioConvert;
+    RadioButton rbfaranhit,rbCelcious;
+    Button btConevertResult;
+    EditText input ,result;
+    double sum;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        radioConvert = findViewById(R.id.rbGroup);
+
+        rbfaranhit = findViewById(R.id.fahrenheit);
+        rbCelcious = findViewById(R.id.degree);
+
+        btConevertResult = findViewById(R.id.convertarbtn);
+
+        input = findViewById(R.id.edit_text);
+        result = findViewById(R.id.tresult);
+
+
+    radioConvert.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        @Override
+        public void onCheckedChanged(RadioGroup radioGroup, int i) {
+            if(rbfaranhit.isChecked()){
+                Toast.makeText(getApplicationContext(),"Faranhit is selected",Toast.LENGTH_LONG).show();
+                btConevertResult.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        sum=((Double.valueOf(input.getText().toString())*9)/5) + 32 ;
+                        result.setText(String.valueOf(sum));
+                    }
+                });
+            }else{
+                Toast.makeText(getApplicationContext(),"Celcious is selected", Toast.LENGTH_LONG).show();
+                btConevertResult.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        sum = ((Double.valueOf(input.getText().toString())-32)*5)/9 ;
+			result.setText(String.valueOf(sum));
+                    }
+                });
+            }
+
+        }
+    });
+
+
+    }
+}
