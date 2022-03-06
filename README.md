@@ -1,1 +1,2 @@
-# Android
+# About Android App Development
+Write Android apps in the Java programming language using an IDE called Android Studio. Based on JetBrains' IntelliJ IDEA software, Android Studio is an IDE designed specifically for Android development.Flutter is an open source UI toolkit that enables developers to build multi-platform apps. Install New Flutter SDK for the latest features. Check out Null Safety, Web Stable & more! Native Performance. Null Safe Code. Open Source. Hot Reload. Web Stable. Flexible UI.
